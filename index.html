@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        1. What is the result of 10 + '5'?<br>
+ let x =10;<br>
+let y = 5;<br>
+console.log(x+y);<br>
+ ans:15<p></p>
+
+2. What is the value of x after x = 10; x += 5;?<br>
+var x=10;<br>
+var x=5;<br>
+console.log(x+=x);<br>
+   ans:10<p></p>
+
+3. What is the result of 10 - null?<br>
+var x =10;<br>
+var y=null;<br>
+console.log(x-y);<br>
+    ans:10<p></p>
+
+4. What is the value of x after x = 10; x *= 2;?<br>
+let x =10;<br>
+let y=2;<br>
+console.log(x*=y);<br>
+    ans:20<p></p>
+
+5. What is the result of 10 / '2'?<br>
+var x =10;<br>
+var y=2;<br>
+console.log(x/y);<br>
+    ans:5<p></p>
+
+6. What is the result of 10 % 3?<br>
+let x =10;<br>
+let y=3;<br>
+console.log(x%y);<br>
+  ans:1<p></p>
+
+7. What is the value of x after x = 10; x = x ** 2;?<br>
+let x=10;<br>
+let y=2;<br>
+console.log(x**2);<br>
+  ans:100<p></p>
+8. What is the result of 10 > 5 && 5 < 10?<br>
+let x =10;<br>
+let y =5;<br>
+console.log(x>y && y<x);<br>
+   ans:true<p></p>
+
+9. What is the result of 10 === '10'?<br>
+let a =10;<br>
+let b =10;<br>
+console.log(a===b);<br>
+  ans:true<p></p>
+
+10. What is the result of null ?? 'default'?<br>
+const result = null?? default;<br>
+console.log(result);<br>
+  ans: default<p></p>
+
+11. What is the result of 10 || 'default'?<br>
+const result = 10 || default;<br>
+console.log(result);<br>
+    ans:10<p></p>
+
+12. What is the result of !true?<br>
+const result=!true;<br>
+console.log(result);<br>
+  ans:false<p></p>
+
+13. What is the result of 10 & 5?<br>
+const result=10&5;<br>
+console.log(result);<br>
+  ans:0<p></p>
+
+14. What is the result of 10 | 5?<br>
+const result=10|5;<br>
+console.log(result);<br>
+  ans:15<p></p>
+
+15. What is the result of 10 ^ 5?<br>
+const result=10^5;<br>
+console.log(result);<br>
+  ans:15<p></p>
+
+1 What is the result of x = 10; y = ++x;? What are the values of x and y?<br>
+let x =10;<br>
+let y=++x;<br>
+console.log(x,y);<br>
+  ans:11,11<p></p>
+
+2. What is the result of x = 10; y = x++;? What are the values of x and y?<br>
+let x =10;<br>
+let y=x++;<br>
+console.log(x,y);<br>
+   ans:11,10<p></p>
+
+3. What is the result of x = 10; console.log(++x);?<br>
+let x =10;<br>
+console.log(++x);<br>
+  ans:11<p></p>
+
+4. What is the result of x = 10; console.log(x++);?<br>
+let x =10;<br>
+console.log(x++);<br>
+   ans:10;<p></p>
+
+5. What is the result of x = 10; y = --x;? What are the values of x and y?<br>
+let x =10;<br>
+let y =--x;<br>
+console.log(x,y)<br>
+  ans: 9,9<p></p>
+
+6. What is the result of x = 10; y = x--;? What are the values of x and y?<br>
+let a = 10;<br>
+let b =a--;<br>
+console.log(a,b);<br>
+  ans:9,10<p></p>
+
+Ternary Operators:<br>
+1. What is the result of x = 10; y = x > 5 ? 'yes' : 'no';? What is the value of y?<br>
+let x =10;<br>
+let y = (x>5)? 'yes':'no';<br>
+console.log(y);<br>
+   ans:yes<p></p>
+
+2. What is the result of x = 10; y = x > 5 ? 'yes' : x > 3 ? 'maybe' : 'no';? What is the value of y?<br>
+let x =10;<br>
+let y =(x>5)? 'yes':x>3? 'mybe':'no';<br>
+console.log(y)<br>
+  ans:yes<p></p>
+
+Optional Chaining:<br>
+1. What is the result of const obj = { a: { b: 'c' } }; console.log(obj?.a?.b);?<br>
+const obj={a:{b:'c'}<br>
+console.log(obj?.a?.b)<br>
+   ans:c<p></p>
+2. What is the result of const obj = { a: { b: 'c' } }; console.log(obj?.a?.c);?<br>
+const obj={a:{b:'c'}}<br>
+console.log(obj?.a?.c)<br>
+  ans:undefined<p></p>
+3. What is the result of const obj = { a: { b: 'c' } }; console.log(obj?.b?.c);?<br>
+const obj={a:{b:'c'}<br>
+console.log(obj?.b?.c);<br>
+  ans:undefined<p></p>
+
+Nullish Coalescing:<br>
+1. What is the result of x = null; y = x ?? 'default';? What is the value of y?<br>
+let x =null;<br>
+let y =x?? 'default';<br>
+console.log(y);<br>
+  ans:default<p></p>
+2. What is the result of x = undefined; y = x ?? 'default';? What is the value of y?<br>
+let x = undefined<br>
+let y = x?? 'default';<br>
+console.log(y);<br>
+  ans:undefined<p></p>
+3. What is the result of x = 0; y = x ?? 'default';? What is the value of y?<br>
+const x= 0;<br>
+const y=x??'default';<br>
+console.log(y);<br>
+    ans:o
+
+</body>
+</html>
